@@ -1,24 +1,18 @@
 import Head from 'next/head';
+import Button from '../shared/components/button';
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
+    <section>
       <Head>
-        <title>Create Next App</title>
+        <title>Next.js / Tailwind Demo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-          <div class="flex-shrink-0">
-            <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo" />
-          </div>
-          <div>
-            <div class="text-xl font-medium text-black">ChitChat</div>
-            <p class="text-gray-500">You have a new message!</p>
-          </div>
-        </div>
-      </main>
-    </div>
+      <div className="container mx-auto">
+        <Button buttonText="Passed Button Text"></Button>
+      </div>
+    </section>
   );
-}
+};
+
+export default Home;
